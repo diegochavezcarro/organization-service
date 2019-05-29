@@ -4,6 +4,13 @@ git remote add origin https://github.com/dch-microdemo/organization-service.git
 git add .
 git commit -m "Primera Subida"
 git push -u origin master
+
+# Branching:
+git checkout -b micros_basicos
+git push origin micros_basicos
+git branch -a
+git checkout master
+git branch -a
 ### Reference Documentation
 For further reference, please consider the following sections:
 
