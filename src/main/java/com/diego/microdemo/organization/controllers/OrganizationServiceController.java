@@ -33,7 +33,7 @@ public class OrganizationServiceController {
 
 	@RequestMapping(value = "/{organizationId}", method = RequestMethod.GET)
 	public ResponseEntity<Organization> getOrganization(@PathVariable("organizationId") String organizationId) {
-		logger.debug("Looking up data for org {}", organizationId);
+		logger.debug("Looking up data for org: {}", organizationId);
 
 		Optional<Organization> org = orgService.getOrg(organizationId);
 		// org.setContactName(org.getContactName());

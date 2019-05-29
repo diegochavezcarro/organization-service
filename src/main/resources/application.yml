@@ -13,3 +13,5 @@ logging:
     com.diego: DEBUG
 server:
   port: 8081
+signing:
+  key: 1234
