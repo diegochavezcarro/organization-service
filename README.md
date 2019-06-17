@@ -6,10 +6,15 @@ git commit -m "Primera Subida"
 git push -u origin master
 
 # Branching:
+
 git checkout -b micros_basicos
+
 git push origin micros_basicos
+
 git branch -a
+
 git checkout master
+
 git branch -a
 
 # Kafka:
