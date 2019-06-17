@@ -5,6 +5,14 @@ public class OrganizationChangeModel {
 	private String action;
 	private String organizationId;
 
+	/**
+	 * 
+	 */
+	public OrganizationChangeModel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public OrganizationChangeModel(String type, String action, String organizationId) {
 		super();
 		this.type = type;
