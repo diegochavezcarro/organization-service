@@ -44,6 +44,8 @@ https://memorynotfound.com/spring-kafka-json-serializer-deserializer-example/
 
 https://github.com/carnellj/spmia-chapter8/
 
+https://codenotfound.com/spring-kafka-json-serializer-deserializer-example.html
+
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
 
 
