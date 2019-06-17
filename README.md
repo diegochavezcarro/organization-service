@@ -38,14 +38,12 @@ Del lado del ms de licencias comprobar que en los logs aparece el mensaje recibi
 ### Reference Documentation
 For further reference, please consider the following sections:
 
+https://dzone.com/articles/magic-of-kafka-with-spring-boot
+
+https://memorynotfound.com/spring-kafka-json-serializer-deserializer-example/
+
+https://github.com/carnellj/spmia-chapter8/
+
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
 
-### Guides
-The following guides illustrate how to use some features concretely:
-
-* [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
