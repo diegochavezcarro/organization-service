@@ -6,6 +6,7 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.diego.microdemo.organization.events.services.Producer;
 import com.diego.microdemo.organization.model.Organization;
 import com.diego.microdemo.organization.repository.OrganizationRepository;
 
@@ -13,6 +14,9 @@ import com.diego.microdemo.organization.repository.OrganizationRepository;
 public class OrganizationService {
 	@Autowired
 	private OrganizationRepository orgRepository;
+	
+	@Autowired
+	private Producer producer;
 
 	public Iterable<Organization> findAll() {
 		return orgRepository.findAll();
@@ -26,14 +30,17 @@ public class OrganizationService {
 		org.setId(UUID.randomUUID().toString());
 
 		orgRepository.save(org);
+		producer.publishOrgChange("SAVE", org.getId());
 	}
 
 	public void updateOrg(Organization org) {
 		orgRepository.save(org);
+		producer.publishOrgChange("UPDATE", org.getId());
 
 	}
 
 	public void deleteOrg(String orgId) {
 		orgRepository.deleteById(orgId);
+		producer.publishOrgChange("DELETE", orgId);
 	}
 }

@@ -4,7 +4,11 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
-
+  kafka:    
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer        
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 #Setting the logging levels for the service
 logging:
   level:
