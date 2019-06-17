@@ -33,6 +33,8 @@ Ver el topico creado y el objecto recibido:
 .\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topi
 c orgChangeTopic --from-beginning
 
+Del lado del ms de licencias comprobar que en los logs aparece el mensaje recibido
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
