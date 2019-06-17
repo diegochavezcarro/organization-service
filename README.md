@@ -35,6 +35,13 @@ c orgChangeTopic --from-beginning
 
 Del lado del ms de licencias comprobar que en los logs aparece el mensaje recibido
 
+Para levantar el redis:
+
+docker run -d --name=redis -p 6379:6379 redis:alpine
+
+Probar el servicio que desde licencias llama a organizacion
+
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
